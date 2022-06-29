@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@200&display=swap');
+:root{
+    --font-one:'Rubik Moonrocks', cursive;
+    --font-to:'M PLUS 1 Code', sans-serif;
+    --color-one:rgb(66, 255, 170);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url("images/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+
+h2{
+    padding: 30px 50px;
+    font-size: 40px;
+    background-color:var(--color-one) ;
+    color: black;
+    line-height: 60px;
+    font-family: var(--font-to);
+    user-select: none;
+    position: absolute;
+    bottom: 0px;
+}
+
+span{
+    color: rgb(249, 249, 249);
+    font-family: var(--font-to);
+    background-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.donwload{
+    float: right;
+    margin: 20px 10px 0px 0px;
+    display: flex;
+}
+
+
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 30px;
+    top: 20px;
+    left: 30px;
+    position: absolute;
+    font-family: var(--font-one);
+    user-select: none;
+}
+
+.bx-cloud-download{
+    background-color:var(--color-one);
+    color: black;
+    padding: 2px 3px;
+}
+
+
+main{
+    background-color: rgba(0, 0, 0, 0.915);
+    height: 80px;
+}
+
+input, select{
+    user-select: none;
+    width: 250px;
+    padding: 10px 10px;
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 10px 0px 10px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    color: var(--color-one);
+    transition: 0.3s;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+select{
+   background-color: #fff;
+   color: black;
+}
+
+button{
+    width: 250px;
+    padding: 10px 10px;
+    margin: 0px 10px 0px 10px;
+    font-size: 11px;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-one);
+    border: 2px solid var(--color-one);
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color:var(--color-one);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1006px){
+    main{
+        height: 140px;
+    }
+      .logo a{
+        display: block;
+        position: relative;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      .donwload{
+        float:none;
+        justify-content: center;
+        margin: 20px 10px 0px 0px;
+        display: flex;
+      }
+}
+
+@media screen and (max-width: 815px){
+    .logo a{
+        text-align: center;
+        top: 0;
+        left: 0;
+       padding: 50px 0px 20px 0px;
+      }
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+      .donwload{
+        width: 100%;
+        display: block;
+       position: absolute;
+       text-align: center;
+      }
+
+      input, select, button{
+        width: 90%;
+        margin: 20px 0px;
+        font-size: 15px;
+        padding: 20px 10px;
+      }
+
+      h2{
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: start;
+        padding: 20px  20px;
+      }
+}
